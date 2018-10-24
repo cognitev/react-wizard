@@ -1,0 +1,21 @@
+{
+  "name": "react-wizard",
+  "version": "0.1.0",
+  "description": "React wizard component",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Error: Nothing to start yet\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cognitev/react-wizard.git"
+  },
+  "keywords": ["react", "wizard"],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cognitev/react-wizard/issues"
+  },
+  "homepage": "https://github.com/cognitev/react-wizard#readme"
+}
