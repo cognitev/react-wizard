@@ -19,7 +19,7 @@ TBD
 ###
 
 ## License
-[MIT © License](https://github.com/ahashem/sern/blob/master/LICENSE)
+[MIT © License](https://github.com/cognitev/react-wizard/blob/master/LICENSE)
 
 --------
 Made with Love @ [Cognitev](https://cognitev.com/)  
