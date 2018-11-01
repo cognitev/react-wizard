@@ -1,6 +1,10 @@
 # react-wizard
 React wizard component
 
+[![CircleCI](https://circleci.com/gh/cognitev/react-wizard/tree/master.svg?style=svg)](https://circleci.com/gh/cognitev/react-wizard/tree/master)
+[![codecov](https://codecov.io/gh/cognitev/react-wizard/branch/master/graph/badge.svg)](https://codecov.io/gh/cognitev/react-wizard)
+
+
 ## Motivation
 TBD
 
