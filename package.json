@@ -1,11 +1,14 @@
 {
   "name": "react-wizard",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "React wizard component",
   "main": "index.js",
   "scripts": {
-    "start": "echo \"Error: Nothing to start yet\" && exit 1",
-    "test": "node_modules/.bin/jest"
+    "test": "node_modules/.bin/jest --env=jsdom",
+    "test:coverage": "codecov",
+    "lint": "node_modules/.bin/eslint --ignore-path .gitignore --ext .js --ext .jsx .",
+    "prebuild": "npm run test && npm run lint",
+    "build": "babel src -d build"
   },
   "repository": {
     "type": "git",
@@ -15,13 +18,16 @@
     "react",
     "wizard"
   ],
-  "author": "",
+  "authors": [
+    "Ahmed Hashem <ahmed.hashem@cognitev.com> (https://github.com/ahashem)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cognitev/react-wizard/issues"
   },
   "homepage": "https://github.com/cognitev/react-wizard#readme",
   "dependencies": {
+    "fast-deep-equal": "2.0.1",
     "history": "4.7.2",
     "prop-types": "15.6.2",
     "react": "^16.0.0",
@@ -31,7 +37,9 @@
   "devDependencies": {
     "@babel/cli": "7.1.2",
     "@babel/core": "7.1.2",
+    "@babel/plugin-proposal-class-properties": "7.1.0",
     "@babel/preset-env": "7.1.0",
+    "@babel/preset-react": "7.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "10.0.1",
     "babel-jest": "^23.6.0",
@@ -45,6 +53,7 @@
     "enzyme": "3.7.0",
     "enzyme-adapter-react-16": "1.6.0",
     "eslint": "5.8.0",
+    "eslint-config-airbnb": "17.1.0",
     "eslint-config-react-app": "3.0.4",
     "eslint-plugin-flowtype": "3.1.4",
     "eslint-plugin-import": "2.14.0",
@@ -52,6 +61,7 @@
     "eslint-plugin-react": "7.11.1",
     "jest": "23.6.0",
     "webpack": "4.23.1",
+    "webpack-cli": "3.1.2",
     "webpack-dev-server": "3.1.10"
   },
   "peerDependencies": {
